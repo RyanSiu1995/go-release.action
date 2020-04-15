@@ -13,6 +13,8 @@ LABEL "homepage"="http://ngs.io/t/actions/"
 
 LABEL "maintainer"="Atsushi Nagase <a@ngs.io> (https://ngs.io)"
 
+ENV CGO_ENABLED=0
+
 RUN apk add --no-cache curl jq git build-base
 
 ADD entrypoint.sh /entrypoint.sh
